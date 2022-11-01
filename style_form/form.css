@@ -1,0 +1,147 @@
+
+.form-container{
+    padding-top: 130px;
+    min-height: 100vh;
+    padding-bottom: 75px;
+    /* background-color: aqua; */
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fieldset{
+    min-width: 200px;
+    max-width: 500px;
+    width: 40%;
+    min-height: 230px;
+    border: 3px solid green;
+    background-color: MintCream;
+    border-radius: 6px;
+}
+legend{
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.fieldset label{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 3px;
+    /* font-size: 15px; */
+}
+.fieldset input[type="text"], input[type="password"], input[type="date"], input[type="time"], .form-inputs .multiselect-live input, textarea{
+    display: block;
+    min-width: 100px;
+    width: 60%;
+    border: 2px solid SeaGreen;
+    background-color: WhiteSmoke;
+    border-radius: 6px;
+    outline: none;
+    /* padding-left: 10px; */
+    padding: 10px 10px 10px 10px;  
+}
+
+.fieldset label{
+    margin-top: 10px;
+}
+
+.fieldset .remember-me{
+    margin-bottom: 10px;
+}
+
+.cancel-btn{
+    background-color: silver;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    color: aliceblue;
+    cursor: pointer;
+    box-shadow: 5px 0px 8px rgb(0,0,0,0.5);
+    margin-right: 5px;
+    border-radius: 5px;
+}
+.login-btn{
+    background-color: green;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 16px;
+    color: aliceblue;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 5px 0px 8px rgb(0,0,0,0.5);
+}
+.login-btn:hover {
+    background-color: #3e8e41;
+}
+.cancel-btn:hover {
+    background-color: LightGray;
+  }
+.investigatie, .data-programare{
+    margin-top: 10px;
+}
+.btn-programare{
+    margin-top: 10px;
+}
+
+.input-control{
+    display: flex;
+    flex-direction: column;
+}
+
+.multiselect-live{
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+.multiselect-live i {
+	padding: 9px;
+	padding-left: 0;
+	color:rgba(0, 0, 0, 0.514);
+}
+.multiselect-live i:hover{
+    color: black;
+}
+.liveSelect-container{
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    max-width: 500px;
+}
+ul#liveSelect{
+    display: none;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: -35px;
+    width: 100%;
+}
+.form-inputs .option{
+    list-style: none;
+	list-style: none;
+	background-color: whitesmoke;
+    box-shadow: inset 1px 2px 3px rgba(0,0,0,0.5);
+	min-width: 100px;
+    width: 60%;
+	padding: 0;
+	z-index: 10;
+    padding: 4px;
+}
+.form-inputs .option:hover{
+    background-color: rgba(181, 181, 231, 0.95);
+
+}
+.input-control select{
+    padding: 10px;
+    border-radius: 6px;
+    outline: none;
+    border: 2px solid seagreen;
+    background-color: WhiteSmoke;
+    min-width: 100px;
+    width: 60%;
+}
+
+

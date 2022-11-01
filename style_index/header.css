@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    font-family: Roboto, Arial;
+    background-color: gainsboro;
+}
+header{
+    background-image: linear-gradient(MediumSeaGreen, DarkSeaGreen);
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    position: fixed;
+    right:0;
+    left: 0;
+    height: 50px;
+    /* justify-content: space-between; */
+    z-index: 100;
+}
+.logo{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    align-items: center;
+    margin-left: 35px;
+}
+.logo:hover{
+    /* font-size: 35px; */
+    transform: scale(1.5);
+}
+.menu-bar-container{
+    flex:1;
+    align-items: center;
+    margin-right: 0;
+    margin-left: 40px;
+}
+.menu-bar{
+    margin-top: 25px;
+    display: flex;
+    position: relative;
+}
+.menu-bar li{
+    list-style-type: none;
+    color:aliceblue;
+    flex:1;
+    margin-right: 5px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-bar li a{
+    text-decoration: none;
+    color:aliceblue;
+}
+.menu-bar li a:hover{
+    color:aqua;
+    transition: 1s;
+}
+.menu-bar .submenu {
+    position: absolute;
+    /* top:50px; */
+    opacity: 0;
+    margin-top: 150px;           
+    /* pointer-events: none; */   
+}
+.menu-bar .submenu li{
+    background-image: linear-gradient(MediumSeaGreen, DarkSeaGreen);
+    padding: 10px;
+    color:black;
+    font-size: 17px;
+}
+.menu-bar li:hover > .submenu{
+    opacity: 1;
+}
+

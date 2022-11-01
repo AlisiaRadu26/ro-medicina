@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ROMEDICINA</title>
+        <link rel="stylesheet" href="style_index/header.css">
+        <link rel="stylesheet" href="style_index/section_index.css">
+        <link rel="stylesheet" href="style_tarife/tarife.css">
+        <link rel="stylesheet" href="style_tarife/circle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="logo">ROMEDICINA</div>
+            <div class="menu-bar-container">
+                <ul class="menu-bar">
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="login_pacient.html">LOGIN</a>
+                        <ul class="submenu">
+                            <li><a href="login_pacient.html">LOGIN Pacient</a></li>
+                            <li><a href="login_medic.html">LOGIN Medic</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="signup_pacient.html">SIGN UP</a>
+                        <ul class="submenu">
+                            <li><a href="signup_pacient.html">SIGN UP Pacient</a></li>
+                            <li><a href="signup_medic.html">SIGN UP Medic</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="programare.html">Programare</a></li>
+                    <li><a href="lista_pacienti.html">Lista Pacienți</a></li>
+                    <li><a href="lista_medici.html">Lista Medici</a></li>
+                    <li><a href="tarife.html">Tarife</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+             <div class="container">
+                <div class="myTab">
+                    <div class="tab">
+                        <button class="tablinks" onclick="openTab(event, 'Alergologie')">Alergologie</button>
+                        <button class="tablinks" onclick="openTab(event, 'Cardiologie')">Cardiologie</button>
+                        <button class="tablinks" onclick="openTab(event, 'Dermatologie')">Dermatologie</button>
+                    </div>
+                      
+                    <div id="Alergologie" class="tabcontent">
+                        <h2>Alergologie</h2>
+                            <table style="width:100%">
+                                <tr>
+                                    <td>Consult alergologic/imunologic</td>
+                                    <td>160 RON</td>
+                                    <td><button class="buton_cos" onclick="fillCounter(160)">Adaugă în coș</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Control</td>
+                                    <td>100 RON</td>
+                                    <td><button class="buton_cos" onclick="fillCounter(100)">Adaugă în coș</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Teste cutanate alergeni de mediu</td>
+                                    <td>150 RON</td>
+                                    <td><button class="buton_cos" onclick="fillCounter(150)">Adaugă în coș</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Teste cutanate alergeni alimentari</td>
+                                    <td>280 RON</td>
+                                    <td><button class="buton_cos" onclick="fillCounter(280)">Adaugă în coș</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Test cutanat alergologic la 2-6 medicamente</td>
+                                    <td>300 RON</td>
+                                    <td><button class="buton_cos" onclick="fillCounter(300)">Adaugă în coș</button></td>
+                                </tr>
+                            </table>
+                    </div>
+                      
+                    <div id="Cardiologie" class="tabcontent">
+                        <h2>Cardiologie</h2>
+                        <table style="width:100%">
+                            <tr>
+                                <td>Consultație (include și EKG)</td>
+                                <td>200 RON</td>
+                                <td><button class="buton_cos" onclick="fillCounter(200)">Adaugă în coș</button></td>
+                            </tr>
+                            <tr>
+                                <td>Ecocardiografie</td>
+                                <td>200 RON</td>
+                                <td><button class="buton_cos" onclick="fillCounter(200)">Adaugă în coș</button></td>
+                            </tr>
+                            <tr>
+                                <td>Ecografie Doppler arterială</td>
+                                <td>250 RON</td>
+                                <td><button class="buton_cos" onclick="fillCounter(250)">Adaugă în coș</button></td>
+                            </tr>
+                            <tr>
+                                <td>Ecografie Doppler venoasă</td>
+                                <td>250 RON</td>
+                                <td><button class="buton_cos" onclick="fillCounter(250)">Adaugă în coș</button></td>
+                            </tr>
+                            <tr>
+                                <td>Ecografie Doppler carotidiană</td>
+                                <td>200 RON</td>
+                                <td><button class="buton_cos" onclick="fillCounter(200)">Adaugă în coș</button></td>
+                            </tr>
+                        </table>
+                    </div>
+                      
+                    <div id="Dermatologie" class="tabcontent">
+                        <h2>Dermatologie</h2>
+                        <table style="width:100%">
+                            <tr>
+                                <td>Tratament dermatologic</td>
+                                <td>50 RON</td>
+                                <td><button class="buton_cos" onclick="fillCounter(50)">Adaugă în coș</button></td>
+                            </tr>
+                            <tr>
+                                <td>Electrocauterizare (1-3 leziuni)</td>
+                                <td>100 RON</td>
+                                <td><button class="buton_cos" onclick="fillCounter(100)">Adaugă în coș</button></td>
+                            </tr>
+                            <tr>
+                                <td>Electrocauterizare (4-10 leziuni)</td>
+                                <td>150 RON</td>
+                                <td><button class="buton_cos" onclick="fillCounter(150)">Adaugă în coș</button></td>
+                            </tr>
+                            <tr>
+                                <td>Electrocauterizare (>10 leziuni)</td>
+                                <td>280 RON</td>
+                                <td><button class="buton_cos" onclick="fillCounter(280)">Adaugă în coș</button></td>
+                            </tr>
+                            <tr>
+                                <td>Excizie - în funcție de complexitate (examenul histopatologic nu este inclus)</td>
+                                <td>300 RON</td>
+                                <td><button class="buton_cos" onclick="fillCounter(300)">Adaugă în coș</button></td>
+                            </tr>
+                        </table>
+                      </div>
+                </div>
+                <input type="hidden" id="hidden_value" value="0"/>
+                    <div id="circle1"></div>
+                    <div id="shadowring"></div>
+                    <div id="circle2"></div>
+                    <canvas height="200" width="200" id="counter"/>
+            </div> 
+        </main>
+        <script type="text/javascript" src="script_style/script_tab.js"></script>
+        <script type="text/javascript" src="script_style/script_circle.js"></script>
+    </body>
+    <footer>
+        <a href="suport_clienti.html">Suport Clienți</a>
+        <div>&copy; Romedicina</div>
+    </footer>
+</html>

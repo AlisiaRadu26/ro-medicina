@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ROMEDICINA</title>
+        <link rel="stylesheet" href="style_index/header.css">
+        <link rel="stylesheet" href="style_table/tabel_pacienti.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">ROMEDICINA</div>
+            <div class="menu-bar-container">
+                <ul class="menu-bar">
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="login_pacient.html">LOGIN</a>
+                        <ul class="submenu">
+                            <li><a href="login_pacient.html">LOGIN Pacient</a></li>
+                            <li><a href="login_medic.html">LOGIN Medic</a></li>
+                          </ul>
+                    </li>
+                    <li>
+                        <a href="signup_pacient.html">SIGN UP</a>
+                        <ul class="submenu">
+                            <li><a href="signup_pacient.html">SIGN UP Pacient</a></li>
+                            <li><a href="signup_medic.html">SIGN UP Medic</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="programare.html">Programare</a></li>
+                    <li><a href="lista_pacienti.html">Lista Pacienți</a></li>
+                    <li><a href="lista_medici.html">Lista Medici</a></li>
+                    <li><a href="tarife.html">Tarife</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <section>
+                <div class="table-scroll">
+                    <h2 class="title">Informații pacienți</h2>
+                    <div class="search-input-container">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <input id="myInput" class="search-input" type="text" placeholder="Search..">
+                    </div>
+                    <table id="MyTable">
+                            <thead id="HeadTable"><tr>
+                                <th>Nr.</th>
+                                <th>Nume</th>
+                                <th>Prenume</th>
+                                <th>E-mail</th>
+                                <th>Telefon</th>
+                                <th>Domeniu de investigație</th>
+                                <th>Medic</th>
+                                <th>Data</th>
+                                <th>Ora</th>
+                            </tr></thead>
+                            <tbody id="BodyTable"><tr>
+                                <th>1.</th>
+                                <td>Coconet</td>
+                                <td>Alina</td>
+                                <td>alina.coconet@yahoo.com</td>
+                                <td>0789564856</td>
+                                <td>Cardiologie</td>
+                                <td>Ana Popescu</td>
+                                <td>22.03.2022</td>
+                                <td>10:35</td>
+                            </tr>
+                            <tr>
+                                <th>2.</th>
+                                <td>Pop</td>
+                                <td>Paula</td>
+                                <td>paula_pop@yahoo.com</td>
+                                <td>0767862273</td>
+                                <td>Dermatologie</td>
+                                <td>Lavinia Creț</td>
+                                <td>30.03.2022</td>
+                                <td>10:50</td>
+                            </tr>
+                            <tr>
+                                <th>3.</th>
+                                <td>Popescu</td>
+                                <td>Mihai</td>
+                                <td>mihai.popescu@yahoo.com</td>
+                                <td>0762273786</td>
+                                <td>Alergologie şi patologie</td>
+                                <td>Mircea Rus</td>
+                                <td>24.03.2022</td>
+                                <td>16:20</td>
+                            </tr></tbody>
+                            
+
+                    </table>
+                </div>
+                
+            </section>
+        </main>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+              $("#myInput").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#BodyTable tr").filter(function() {
+                  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+              });
+            });
+        </script>
+    </body>
+    <footer>
+        <a href="suport_clienti.html">Suport Clienți</a>
+        <div>&copy; Romedicina</div>
+    </footer>
+</html>

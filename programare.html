@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ROMEDICINA</title>
+        <link rel="stylesheet" href="style_index/header.css">
+        <link rel="stylesheet" href="style_index/section_index.css">
+        <link rel="stylesheet" href="style_form/form.css">
+        <link rel="stylesheet" href="style_form/validari.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">ROMEDICINA</div>
+            <div class="menu-bar-container">
+                <ul class="menu-bar">
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="login_pacient.html">LOGIN</a>
+                        <ul class="submenu">
+                            <li><a href="login_pacient.html">LOGIN Pacient</a></li>
+                            <li><a href="login_medic.html">LOGIN Medic</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="signup_pacient.html">SIGN UP</a>
+                        <ul class="submenu">
+                            <li><a href="signup_pacient.html">SIGN UP Pacient</a></li>
+                            <li><a href="signup_medic.html">SIGN UP Medic</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="programare.html">Programare</a></li>
+                    <li><a href="lista_pacienti.html">Lista Pacienți</a></li>
+                    <li><a href="lista_medici.html">Lista Medici</a></li>
+                    <li><a href="tarife.html">Tarife</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <section class="form-container">
+                <form class="form" action="#" id="programare_pacient" method="POST" onsubmit="validateProgramare(); return false;">
+                    <fieldset class="fieldset">
+                        <legend>
+                            <strong>Programare Online</strong>
+                        </legend>
+                        <p>
+                            <strong>Completați pentru a vă programa.</strong>
+                        </p>
+                        <hr>
+                        <div class="input-content">
+                            <label for="nume">Nume</label>
+                            <input id="nume" name="nume" type="text" placeholder="Introduceti numele"></input>
+                            <div class="error"></div>
+                        </div>
+
+                        <div class="input-content">
+                            <label for="prenume">Prenume</label>
+                            <input id="prenume" name="prenume" type="text" placeholder="Introduceti prenumele"></input>
+                            <div class="error"></div>
+                        </div>
+
+                        <div class="input-content">
+                            <label for="email">E-mail</label>
+                            <input id="email" name="email" type="text" placeholder="Introduceti E-mail"></input>
+                            <div class="error"></div>
+                        </div>
+                        
+                        <div class="form-inputs">
+                            <label for="specialitate">Specialitate</label>
+                            <div class="multiselect-live">
+                               <div style="display:flex; align-items: center;">
+                                <input type="text" id="filter" placeholder="Selectati Specialitatea">
+                                <i class="fa fa-arrow-down" onclick="showSelect()"></i>
+                              </div>
+                              
+                              <div class="liveSelect-container">
+                                <ul id="liveSelect">
+                                    <li class="option">Alergologie &#351;i imunologie</li>
+                                    <li class="option">Anatomie patologic&#259;</li>
+                                    <li class="option">Anestezie &#351;i terapie intensiv&#259;</li>
+                                    <li class="option">Asistent medical</li>
+                                    <li class="option">Boli infec&#539;ioase</li>
+                                    <li class="option">Cardiologie</li>
+                                    <li class="option">Chirurgie cardiovascul&#259;</li>
+                                    <li class="option">Chirurgie general&#259;</li>
+                                    <li class="option">Chirurgie oncologic&#259;</li>
+                                    <li class="option">Chirurgie oral&#259; &#351;i maxilo-facial&#259;</li>
+                                    <li class="option">Chirurgie ortopedie pediatric&#259;</li>
+                                    <li class="option">Chirurgie pediatric&#259;</li>
+                                  </ul>
+                                </div>
+                              </div>
+                        </div>
+
+                        <label class="investigatie" for="investigatie">Investiga&#539;ie</label>
+                        <textarea id="investigatie" name="investigatie"> </textarea>
+                        
+                        <label class="data-programare">Data programării</label>
+                        <input type="date" id="start" name="data-programare" value="2022-01-01" min="2022-01-01" max="2025-12-31">
+
+                        <label class="ora-programare">Ora programării</label>
+                        <input max="20:00" min="08:00" required type="time">
+                        <small><strong>Program&#259;rile se pot efectua &#238;ntre 8am la 8pm</strong></small>
+                        
+                        <div class="btn-programare">
+                            <button class="cancel-btn" type="button">Cancel</button>
+                            <button class="login-btn" type="submit">Login</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="script_style/script_dropdown.js"></script>
+        <script type="text/javascript" src="script_validari/programare_script.js"></script>
+    </body>
+    <footer>
+        <a href="suport_clienti.html">Suport Clienți</a>
+        <div>&copy; Romedicina</div>
+    </footer>
+</html>

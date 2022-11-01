@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ROMEDICINA</title>
+        <link rel="stylesheet" href="style_index/header.css">
+        <link rel="stylesheet" href="style_index/section_index.css">
+        <link rel="stylesheet" href="style_form/form.css">
+        <link rel="stylesheet" href="style_form/validari.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">ROMEDICINA</div>
+            <div class="menu-bar-container">
+                <ul class="menu-bar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login_pacient.html">LOGIN</a>
+                        <ul class="submenu">
+                            <li><a href="login_pacient.html">LOGIN Pacient</a></li>
+                            <li><a href="login_medic.html">LOGIN Medic</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="signup_pacient.html">SIGN UP</a>
+                        <ul class="submenu">
+                            <li><a href="signup_pacient.html">SIGN UP Pacient</a></li>
+                            <li><a href="signup_medic.html">SIGN UP Medic</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="programare.html">Programare</a></li>
+                    <li><a href="lista_pacienti.html">Lista Pacienți</a></li>
+                    <li><a href="lista_medici.html">Lista Medici</a></li>
+                    <li><a href="tarife.html">Tarife</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <section class="form-container">
+                <form class="form" action="#" id="signup_pacient" method="POST" onsubmit="validateSIGNUP(); return false;">
+                    <fieldset class="fieldset">
+                        <legend>
+                            <strong>SignUP Pacient</strong>
+                        </legend>
+                        <p>
+                            <strong>Completați pentru a vă inregistra.</strong>
+                        </p>
+                        <hr>
+                        <div class="input-content">
+                            <label for="nume">Nume</label>
+                            <input id="nume" name="nume" type="text" placeholder="Introduceti numele"></input>
+                            <div class="error"></div>
+                        </div>
+
+                        <div class="input-content">
+                            <label for="prenume">Prenume</label>
+                            <input id="prenume" name="prenume" type="text" placeholder="Introduceti prenumele"></input>
+                            <div class="error"></div>
+                        </div>
+
+                        <div class="input-content">
+                            <label for="email">E-mail</label>
+                            <input id="email" name="email" type="text" placeholder="Introduceti E-mail"></input>
+                            <div class="error"></div>
+                        </div>
+
+                        <div class="input-content">
+                            <label for="telefon">Telefon</label>
+                            <input id="telefon" name="telefon" type="text" placeholder="Introduceti numarul de telefon"></input>
+                            <div class="error"></div>
+                        </div>
+
+                        <div class="input-control">
+				            <label for="selectJudet"> Judet </label>
+
+				            <select name="state" id="selectJudet" size="1">
+							    <option value="" selected="selected">Selecteaza Judet</option>
+						    </select>
+				        </div>
+
+                        <div class="input-control">
+				            <label for="selectOras">Oras</label>
+
+				            <select name="state" id="selectOras" size="1">
+								<option value="" selected="selected">Selecteaza Oras</option>
+							</select>
+				        </div>
+                        
+                        <div class="input-content">
+                            <label for="parola">Parola</label>
+                            <input id="parola" name="parola" type="password" placeholder="Introduceti Parola"></input>
+                            <div class="error"></div>
+                        </div>
+
+                        <div class="input-content">
+                            <label for="parolar">Repeta parola</label>
+                            <input id="parolar" name="parolar" type="password" placeholder="Repetati parola"></input>
+                            <div class="error"></div>
+                        </div>
+
+                        <label class="remember-me">
+                            <input type="checkbox">Remember me</input>
+                        </label>
+                        <div>
+                            <button class="cancel-btn" type="button">Cancel</button>
+                            <button class="login-btn" type="submit">SignUP</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <script type="text/javascript" src="script_validari/signup_pacient_script.js"></script>
+    </body>
+    <footer>
+        <a href="suport_clienti.html">Suport Clienți</a>
+        <div>&copy; Romedicina</div>
+    </footer>
+</html>

@@ -1,0 +1,29 @@
+main{
+    min-height: 100vh;
+    min-width: 35vh;
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+}
+article{
+    padding-top: 100px;
+    padding-left: 50px;
+}
+article ul li{
+    list-style: none;
+}
+footer {
+    background-color: lightblue;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right:0;
+    text-align: center;
+    font-size: 14px;
+    color:white;
+}
+footer a{
+    color:white;
+    text-decoration: none;
+    cursor: pointer;
+}
